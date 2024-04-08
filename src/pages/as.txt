@@ -1,0 +1,73 @@
+ // const id = e.target.id.value;
+        // const formData = new FormData();
+        // formData.append("key", imageStorageKey);
+        // formData.append("image", file);
+        // console.log(file)
+
+
+        // if (fileInput.files.length > 0) {
+        //     fetch(`https://api.imgbb.com/1/upload?key=${imageStorageKey}`, {
+        //         method: "POST",
+        //         body: formData,
+        //     })
+        //         .then((res) => res.json())
+        //         .then((result) => {
+        //             if (result.success) {
+        //                 const imgUrl = result.data.url;
+        //                 console.log(imgUrl);
+        //                 fetch(`${url}/updateProduct/${id}`, {
+        //                     method: "PUT",
+        //                     headers: {
+        //                         "content-type": "application/json",
+        //                         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        //                     },
+        //                     body: JSON.stringify({
+        //                         img: imgUrl,
+        //                         name: e.target.name.value,
+        //                         price: e.target.price.value,
+        //                         description: e.target.description.value,
+        //                     }),
+        //                 })
+        //                     .then((res) => res.json())
+        //                     .then((data) => {
+        //                         if (data.massage === "Update Success") {
+        //                             console.log(data);
+        //                             setRefetch(!refetch);
+        //                             alert("Your Profile updated successfully");
+        //                             reset();
+        //                         } else {
+        //                             setRefetch(!refetch);
+        //                             alert("Sorry The profile do not updated");
+        //                         }
+        //                     });
+        //             }
+        //         });
+
+        // } else {
+        //     fetch(`${url}/updateProduct/${id}`, {
+        //         method: "PUT",
+        //         headers: {
+        //             "content-type": "application/json",
+        //             authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        //         },
+        //         body: JSON.stringify({
+        //             img: e.target.img.value,
+        //             name: e.target.name.value,
+        //             price: e.target.price.value,
+        //             description: e.target.description.value,
+        //         }),
+        //     })
+        //         .then((res) => res.json())
+        //         .then((data) => {
+        //             console.log(data)
+        //             if (data.acknowledged) {
+        //                 console.log(data);
+        //                 alert("Your Profile updated successfully");
+        //                 setRefetch(!refetch);
+
+        //             } else {
+        //                 alert("Sorry The profile do not updated");
+        //                 setRefetch(!refetch);
+        //             }
+        //         });
+        // }
